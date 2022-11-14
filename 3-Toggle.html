@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 25px;
+            background: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reprehenderit velit maxime cupiditate alias magnam rerum odio, eaque veniam ea eum autem dolorem, animi quasi sed mollitia fugit error necessitatibus!</p>
+
+    <button onclick="myFunction()">Toggle DARK MODE</button>
+    <script>
+        function myFunction(){
+            let dark = document.body;
+            dark.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

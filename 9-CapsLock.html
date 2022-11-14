@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input id="myInput" value="캡스락인자">
+    <p id="text">!Warning CapsLock On</p>
+    <script>
+        let input = document.getElementById("myInput");
+        let text = document.getElementById("text");
+        input.addEventListener("keyup", function(e) {
+
+            if(e.getModifierState("CapsLock")) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+
+        });
+        // keyup : 키를 눌렀다가 땔 때
+        // getModifierState : CapsLock과 연결
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        p.active {
+            background: red;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $("button").click(function(){
+                // $("p").slideToggle();
+                $("p").toggleClass("active");
+            })
+        });
+    </script>
+</head>
+<body>
+    <button>토글버튼</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit explicabo atque corporis, neque eligendi dicta illum dolor sunt ullam architecto quisquam quo voluptate adipisci, dolorem at nam aliquid labore ipsa?
+    </p>
+</body>
+</html>
